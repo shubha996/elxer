@@ -1,0 +1,42 @@
+.right-comment{
+    width: 40%;
+}
+.heading{
+    padding: 20px;
+    text-align: center;
+}
+.credits-div img{
+    height: 5em;
+    width: 15em;
+    margin: 20px;
+}
+.credits-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 90px rgba(0, 0, 0, 0.1);
+}
+.left-logo{
+    animation: scroll 10s infinite linear;
+}
+.right-logo{
+    animation: scroll 10s infinite linear;
+}
+@keyframes scroll {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-100%);}
+}
+@media screen and (max-width: 1300px) {
+    .right-comment{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 650px){
+    .credits-div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

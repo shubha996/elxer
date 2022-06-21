@@ -1,0 +1,207 @@
+/* Due to Bootstrap scss p tag is by default assigned margin-botom = 1rem */
+p{
+    margin-bottom: 0rem;
+}
+
+/* Font Face */
+@font-face {
+    font-family: outer-zone;
+    src: url('../../assets/fonts/outer-zone/Outer_zone.ttf');
+}
+
+/* Notification Bar */
+.notification-bar{
+    background-color: #233141;
+}
+.txt-notification-bar{
+    color: #fff;
+    text-align: center;
+}
+.container-notification-bar{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.button-notification-bar{
+    margin-left: 10px;
+}
+.message-notification-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.button-notification-bar button{
+    text-transform: none;
+    background-color: #fff;
+    height: 25px;
+    color: #233141;
+}
+.button-notification-bar button:hover{
+    background-color: rgb(240, 235, 235);
+}
+.blink-notification-bar{
+    animation: blink linear 1.2s infinite;
+}
+@keyframes blink {
+    0%{opacity: 1.0;}
+    50%{opacity: 0.0;}
+    100%{opacity: 1.0;}
+}
+@media screen and (max-width: 757px) {
+    .container-notification-bar{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Top Bar */
+.topbar{
+    background-color: #0077db;
+    font-size: 0.9rem;
+    padding: 10px;
+}
+.left-topbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.pulse-topbar{
+    height: 8px;
+    width: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: pulse-topbar 2.5s infinite;
+}
+@keyframes pulse-topbar {
+    0%{box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);}
+    70%{box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);}
+    100%{box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);}
+}
+.right-topbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 250px;
+}
+.right-topbar div{
+    color: #fff;
+}
+.left-topbar p{
+    color: #fff;
+    text-align: center;
+}
+.left-topbar p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.innertopbar{
+    display: flex;
+    padding: 0% 10% 0% 10%;
+    justify-content: space-between;
+}
+@media screen and (max-width: 1012px){
+    .innertopbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 3% 0px 3%;
+    }
+}
+
+/* Header bar */
+.headerbar{
+    padding: 10px;
+}
+.innerheaderbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 10% 0% 10%;
+}
+.innerheaderbar h2{
+    font-family: outer-zone, Arial, Helvetica, sans-serif;
+    color: #0077db;
+    animation: logo-headerbar linear forwards 2s;
+}
+.right-headerbar{
+    padding-top: 1%;
+}
+.nav-items-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.nav-items-list li{
+    margin: 0px 8px 0px 8px;
+    white-space: nowrap;
+    font-weight: 600;
+    font-family: Helvetica,Arial,sans-serif!important;
+}
+@keyframes logo-headerbar {
+    0%{letter-spacing: 0px;}
+    100%{letter-spacing: 19px;}
+}
+
+.nav-items-list button{
+    border-color: #233141!important;
+    color: #233141!important;
+    text-transform: none;
+}
+.nav-items-list button:hover{
+    background-color: #233141!important;
+    color: #fff!important;
+}
+.menuheaderbar{
+    display: none;
+}
+.nav-items-list-mobile{
+    list-style: none;
+}
+.nav-items-list-mobile li{
+    background-color: #0077db;
+    padding: 10px;
+    color: #fff;
+    margin-left: 0%;
+    font-weight: 600;
+    padding-left: 5%;
+}
+.nav-items-list-mobile a{
+    text-decoration: none;
+    
+}
+.nav-items-list-mobile li:hover{
+    background-color: #fff;
+    color: #0077db;
+}
+.dropdownMenu{
+    display: none;
+}
+.mobileDropDownMenu{
+    animation: growDown 300ms forwards ease-in-out;
+    transform-origin: top;
+}
+@keyframes growDown {
+    0%{transform: scaleY(0);}
+    80%{transform: scaleY(1.1);}
+    100%{transform: scaleY(1);}
+}
+@media screen and (max-width: 1150px) {
+    .menu{
+        display: contents;
+    }
+    .dropdownMenu{
+        display: contents;
+    }
+    .mobileDropDownMenu{
+        margin-left: -40px;
+    }
+    .right-headerbar{
+        display: none;
+    }
+    .innerheaderbar{
+        padding: 0% 5% 0% 5%!important;
+    }
+    
+}

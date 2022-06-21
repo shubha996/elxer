@@ -1,0 +1,161 @@
+@font-face {
+    font-family: outer-zone;
+    src: url('../../assets/fonts/outer-zone/Outer_zone.ttf');
+}
+.container-footer{
+    font-family: Montserrat,Arial, Helvetica, sans-serif;
+    letter-spacing: 0.01rem;
+}
+/* Footer Top Section */
+.footer-top{
+    background-image: url('https://elxer.com/assets/images/svg/background-lines.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    font-family: Montserrat,Helvetica,Arial,sans-serif;
+    color: #fff;
+    display: flex;
+}
+.footer-top h2{
+    margin-bottom: 5px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.footer-top h4{
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.top-left-heading{
+    width: 70%;
+    padding: 5%;
+    padding-left: 10%;
+}
+.top-right-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding-right: 10%;
+    
+}
+.top-right-heading button{
+    background-color: #233141;
+    height: 45px;
+    width: 190px;
+}
+.top-right-heading button:hover{
+    background-color: #233141;
+}
+
+/* Footer Bottom Head Section */
+.bottom-head h2{
+    font-family: outer-zone;
+    color: #0077db;
+}
+
+/* Footer Bottom Foot Section */
+.bottom{
+    padding: 1% 10% 0% 10%;
+}
+table button{
+    height: 20px;
+    width: fit-content;
+    font-size: 10px!important;
+    text-transform: none!important;
+    background-color: #08ca73!important;
+}
+table h3{
+    font-family: Montserrat,Helvetica,Arial,sans-serif!important;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.bottom-foot{
+    display: flex;
+    justify-content: space-between;
+}
+table tr th{
+    padding: 15px 0px 15px 0px;
+    font-size: 1rem;
+    color: #233141;
+}
+table{
+    text-align: left;
+    
+}
+table tr td{
+    padding: 5px 0px 5px 0px;
+    font-size: 0.85rem;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+
+/* Column-Four */
+.card-container-heading{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.card-container-heading p{
+    width: fit-content;
+    font-weight: 700;
+}
+.card-container-column-four{
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 0 rgba(130, 126, 126, 0.9);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 15px 9px 15px;
+}
+.card-container-text p{
+    font-size: 13px;
+    margin-top: 5px;
+}
+.card-container-image{
+   padding-left: 40px;
+}
+.pulse-footer{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: black;
+    animation: pulse-footer 2.2s infinite;
+}
+@keyframes pulse-footer {
+    0%{box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);}
+    70%{box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);}
+    100%{box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);}
+}
+#iframe-div{
+    margin-left: 2.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    box-shadow: 0 0 30px 0 rgba(196, 193, 193, 0.7);
+}
+.column-four{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5px;
+    margin-top: 50px;
+    color: rgb(75, 69, 85);
+}
+.copyright :nth-child(2){
+    font-size: 12px;
+}
